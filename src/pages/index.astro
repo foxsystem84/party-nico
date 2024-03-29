@@ -1,0 +1,487 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Fiesta de Nico"
+  description="Celebración de su primer cumpleaños de mi hijo Nicolás"
+>
+  <main data-scroll-container class="">
+    <section class="section1">
+      <!-- <header class="container mx-auto flex justify-between py-10">
+        <div>
+          <img src="/images/logo-nico2.png" />
+        </div>
+        <div class="flex items-center">
+          <ul class="flex gap-8 text-black text-2xl">
+            <li><a href="#" class="block">Inicio</a></li>
+            <li><a href="#">Biografia</a></li>
+            <li><a href="#">Ubicacion</a></li>
+          </ul>
+        </div>
+      </header> -->
+      <div class="h-screen w-full relative overflow-hidden">
+        <img
+          data-scroll
+          data-scroll-speed="-3"
+          data-scroll-delay=".08"
+          src="/images/party/animals.png"
+          class="parallax animals absolute hidden md:block bottom-0 right-[80px] w-[1150px] h-[780px] object-cover z-40"
+          alt=""
+        />
+        <img
+          data-scroll
+          data-scroll-speed="-2"
+          data-scroll-delay=".03"
+          data-scroll-position="top"
+          src="/images/party/cake.png"
+          class="parallax cake absolute bottom-0 right-[32px] md:right-[484px] w-[360px] h-[480px] object-cover z-40"
+          alt=""
+        />
+        <div
+          class="title absolute top-[35%] md:top-1/2 left-1/2 md:left-1/4 -translate-x-1/2 -translate-y-1/2 z-50 text-center space-y-6"
+        >
+          <h1
+            class="text-5xl md:text-[110px] leading-none font-bold text-[#5c9356] uppercase"
+          >
+            Fiesta de<br /><span class="text-[#447360]">Nicolás</span>
+          </h1>
+
+          <div class="px-4 md:px-8 py-2 bg-[#af825d] rounded-lg inline-block">
+            <h3 class="text-xl md:text-3xl font-semibold text-white">
+              Sábado 6 Abril / 4pm
+            </h3>
+          </div>
+        </div>
+
+        <img
+          data-scroll
+          data-scroll-speed="4"
+          data-scroll-delay=".05"
+          data-scroll-position="top"
+          src="/images/party/leaves2-top.png"
+          class="parallax leaves2-t absolute w-full h-[60px] md:h-[130px] object-cover z-40"
+          alt=""
+        />
+        <!-- <img
+          src="/images/party/movil-tree-leaves.png"
+          class="parallax background absolute w-[428px] h-[1982px] object-cover z-30"
+          alt=""
+        /> -->
+        <img
+          src="/images/party/tree-leaves.png"
+          class="parallax background absolute w-full h-[1982px] object-cover z-30"
+          alt=""
+        />
+        <img
+          data-scroll
+          data-scroll-speed="4"
+          data-scroll-delay=".05"
+          data-scroll-position="top"
+          src="/images/party/chains.png"
+          class="parallax chains absolute top-0 w-[680px] left-0 h-[280px] object-cover z-30"
+          alt=""
+        />
+        <img
+          data-scroll
+          data-scroll-speed="-2"
+          data-scroll-delay=".07"
+          data-scroll-direction="horizontal"
+          src="/images/party/movil-leaves-right.png"
+          class="parallax leaves-r absolute block md:hidden right-0 w-[92px] bottom-0 h-auto md:h-full z-40"
+          alt=""
+        />
+        <img
+          data-scroll
+          data-scroll-speed="-2"
+          data-scroll-delay=".07"
+          data-scroll-direction="horizontal"
+          src="/images/party/leaves-right.png"
+          class="parallax leaves-r hidden md:block absolute right-0 w-[230px] bottom-0 h-auto md:h-full z-40"
+          alt=""
+        />
+        <img
+          data-scroll
+          data-scroll-speed="2"
+          data-scroll-delay=".07"
+          data-scroll-direction="horizontal"
+          src="/images/party/movil-leaves-left.png"
+          class="parallax leaves-l block md:hidden absolute left-0 bottom-0 object-cover z-40 w-[110px] h-auto"
+          alt=""
+        />
+        <img
+          data-scroll
+          data-scroll-speed="2"
+          data-scroll-delay=".07"
+          data-scroll-direction="horizontal"
+          src="/images/party/leaves-left.png"
+          class="parallax leaves-l hidden md:block absolute left-0 bottom-0 object-cover z-40 w-[250px] h-full"
+          alt=""
+        />
+        <img
+          data-scroll
+          data-scroll-speed="-1.5"
+          data-scroll-delay=".03"
+          data-scroll-position="top"
+          src="/images/party/leaves-bottom.png"
+          class="parallax leaves-b absolute bottom-0 w-full min-h-[350px] object-cover z-30"
+          alt=""
+        />
+        <img
+          src="/images/party/leaves2-bottom.png"
+          class="parallax leaves2-b absolute bottom-0 w-full min-h-[190px] object-cover z-50"
+          alt=""
+        />
+      </div>
+    </section>
+    <section class="section3 py-28 relative -z-50 bg-[#5EBC9E] overflow-hidden">
+      <div
+        class="bg-[url('/images/zenon/movil-farm.png')] md:bg-[url('/images/zenon/farm.png')] bg-no-repeat bg-cover w-full h-full absolute bottom-[0px] -z-10"
+      >
+      </div>
+      <img
+        src="/images/zenon/ramas-right.png"
+        class="w-1/2 md:w-auto h-auto absolute right-0 -z-40 object-cover"
+        height="400px"
+        width="624px"
+      />
+      <img
+        src="/images/zenon/ramas-left.png"
+        class="w-1/2 md:w-auto h-auto absolute top-[100px] left-[0px] -z-40 object-cover"
+      />
+      <img
+        src="/images/zenon/percheron-ojos-cerrados.png"
+        class="percheron absolute bottom-[100px] -left-[290px] md:-left-[100px] w-auto h-[500px] z-20"
+      />
+      <img
+        src="/images/zenon/percheron-ojos-abiertos.png"
+        class="absolute bottom-[100px] -left-[290px] md:-left-[100px] w-auto h-[500px] z-10"
+      />
+      <img
+        src="/images/zenon/lola-ojos-cerrados.png"
+        class="lola absolute -bottom-[290px] -left-[266px] md:-left-[100px] z-40"
+      />
+      <img
+        src="/images/zenon/lola-ojos-abiertos.png"
+        class="absolute -bottom-[290px] -left-[266px] md:-left-[100px] z-30"
+      />
+      <img
+        src="/images/zenon/pepe.png"
+        class="absolute bottom-[0px] md:bottom-[630px] right-[0px] md:left-[660px] w-auto h-[150px] z-40"
+      />
+      <img
+        src="/images/zenon/zenon-ojos-cerrados.png"
+        class="zenon absolute bottom-[0px] -right-[180px] md:right-[0px] z-20"
+      />
+      <img
+        src="/images/zenon/zenon-ojos-abiertos.png"
+        class="absolute bottom-[0px] -right-[180px] md:right-[0px] z-10"
+      />
+      <img
+        src="/images/zenon/bartolito-ojos-cerrados.png"
+        class="bartolito absolute -bottom-[6px] md:bottom-[95px] right-[150px] z-50"
+      />
+      <img
+        src="/images/zenon/bartolito-ojos-abiertos.png"
+        class="absolute -bottom-[300px] right-[150px] z-40"
+      />
+      <div class="container mx-auto">
+        <div
+          class="mx-8 md:mx-0 bg-[#EDF4CA]/[.8] border-[16px] -z-50 rounded-2xl border-[#AB663B]"
+        >
+          <article
+            class="flex flex-col justify-center items-center text-white space-y-8"
+          >
+            <h2
+              class="text-5xl font-sans md:text-8xl text-[#E55E01] -rotate-[8deg] font-bold mb-4"
+            >
+              La<br /> granja
+            </h2>
+            <div
+              class="p-4 text-3xl font-sans md:text-4xl font-bold -rotate-[5deg] text-center bg-[#498815] border-8 rounded-xl border-[#FFF7E3]"
+            >
+              de Nicolás
+            </div>
+            <span class="text-3xl text-[#77911F]"
+              >¡Te invita a celebrar su!</span
+            >
+            <span class="tree-trunk"></span>
+            <span
+              class="-rotate-[3deg] p-4 text-3xl md:text-6xl font-bold uppercase bg-[#498815] border-8 rounded-xl border-[#FFF7E3]"
+              >1er añito</span
+            >
+            <span
+              class="rotate-[4deg] p-4 text-2xl md:text-5xl font-bold uppercase bg-[#F4CD92] border-8 rounded-xl border-[#BD7347]"
+              >Sábado 06 Abril</span
+            >
+            <span
+              class="-rotate-[2deg] p-4 text-3xl md:text-6xl font-bold uppercase bg-[#F4CD92] border-8 rounded-xl border-[#BD7347]"
+              >4:00 pm</span
+            >
+
+            <span
+              class="-rotate-[1deg] p-4 text-xl md:text-3xl font-bold text-center bg-[#498815] hover:bg-lime-600 transition ease-in-out duration-300 border-8 rounded-xl border-[#FFF7E3]"
+            >
+              <a href="/ubicacion"
+                >Calle Los Manantiales <br />Mz A Lt 08 - Comas</a
+              >
+            </span>
+            <!-- <span class="absolute bottom-[226px] left-[400px] text-slate-900"
+              >¿Cómo <br />llegar?</span
+            > -->
+            <span
+              class="rotate-[2deg] p-4 text-xl md:text-3xl font-bold uppercase text-center bg-[#E37B0A] border-8 rounded-xl border-[#FFF7E3]"
+              >Te esperamos</span
+            >
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- <footer
+      class="relative text-white mt-20 flex w-full flex-col place-items-center pb-20"
+    >
+      <div
+        class="absolute z-50 bg-[url('/images/party/leaves-bottom.png')] bottom-0 w-full h-[250px]"
+      >
+      </div>
+      <div
+        class="container mx-auto z-50 flex flex-col pt-6 md:flex-row md:justify-between"
+      >
+        <span
+          >{new Date().getFullYear()} IOLatam | Todos los derechos reservados</span
+        >
+        <span
+          aria-hidden="true"
+          class="mt-6 w-full border-t-2 border-[#1E2229] pt-6 md:hidden"></span>
+
+        <nav>
+          <ul
+            class="flex flex-row items-center gap-x-6"
+            aria-label="redes sociales y botón para alternar tema"
+          >
+            <li class="flex flex-row items-center">
+              <img
+                class="inline-block mr-2"
+                src="/images/ubicacion.png"
+                alt="ubicación"
+              />
+              <span class='inline-block"'>Dirección</span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer> -->
+  </main>
+</Layout>
+
+<script is:inline src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"
+></script>
+<script>
+  import LocomotiveScroll from "locomotive-scroll";
+  const scroll = new LocomotiveScroll({
+    el: document.querySelector("[data-scroll-container]"),
+    smooth: true,
+    tablet: { smooth: true },
+    smartphone: { smooth: true },
+  });
+
+  /*GSAP Animation*/
+  const parallax_el = document.querySelectorAll(".parallax");
+  let timeline = gsap.timeline();
+
+  parallax_el.forEach((el) => {
+    timeline.from(
+      el,
+      {
+        top: `${+(document.querySelector(".background") as HTMLImageElement).offsetHeight / 2}px`,
+        duration: 3.5,
+        ease: "power3.out",
+      },
+      "1"
+    );
+  });
+  console.log(
+    (document.querySelector(".background") as HTMLImageElement).offsetHeight
+  );
+  timeline
+    .from(
+      ".title h1",
+      {
+        y:
+          -window.innerHeight +
+          (
+            document.querySelector(".title h1") as HTMLElement
+          ).getBoundingClientRect().top,
+        duration: 2.5,
+      },
+      "2.5"
+    )
+    .from(
+      ".title div",
+      {
+        y: 250,
+        duration: 2,
+        opacity: 0,
+      },
+      "3"
+    )
+    .from(
+      ".title p",
+      {
+        y: 250,
+        duration: 2,
+        opacity: 0,
+      },
+      "3"
+    );
+</script>
+<style is="global">
+  .background {
+    top: calc(50% - 500px);
+    left: calc(50%);
+    transform: translate(-50%, -50%);
+  }
+  .tree-trunk::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 700px;
+    background: linear-gradient(to right, #9f511c, #5a2b05);
+    border-radius: 20px 20px 0 0;
+    z-index: 0;
+  }
+
+  /*! locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
+  html.has-scroll-smooth {
+    overflow: hidden;
+  }
+
+  html.has-scroll-dragging {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .has-scroll-smooth body {
+    overflow: hidden;
+  }
+
+  .has-scroll-smooth [data-scroll-container] {
+    min-height: 100vh;
+  }
+
+  [data-scroll-direction="horizontal"] [data-scroll-container] {
+    height: 100vh;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  [data-scroll-direction="horizontal"] [data-scroll-section] {
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    height: 100%;
+  }
+
+  .c-scrollbar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 11px;
+    height: 100%;
+    transform-origin: center right;
+    transition:
+      transform 0.3s,
+      opacity 0.3s;
+    opacity: 0;
+  }
+  .c-scrollbar:hover {
+    transform: scaleX(1.45);
+  }
+  .c-scrollbar:hover,
+  .has-scroll-scrolling .c-scrollbar,
+  .has-scroll-dragging .c-scrollbar {
+    opacity: 1;
+  }
+  [data-scroll-direction="horizontal"] .c-scrollbar {
+    width: 100%;
+    height: 10px;
+    top: auto;
+    bottom: 0;
+    transform: scaleY(1);
+  }
+  [data-scroll-direction="horizontal"] .c-scrollbar:hover {
+    transform: scaleY(1.3);
+  }
+
+  .c-scrollbar_thumb {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.5;
+    width: 7px;
+    border-radius: 10px;
+    margin: 2px;
+    cursor: -webkit-grab;
+    cursor: grab;
+  }
+  .has-scroll-dragging .c-scrollbar_thumb {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+  }
+  [data-scroll-direction="horizontal"] .c-scrollbar_thumb {
+    right: auto;
+    bottom: 0;
+  }
+
+  h1,
+  h2,
+  h2 div {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  div h1,
+  div h3 {
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .zenon,
+  .lola,
+  .percheron,
+  .bartolito {
+    animation: blink 3.5s infinite;
+    animation-delay: 2s;
+    opacity: 0;
+  }
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    5% {
+      opacity: 1;
+    }
+    6% {
+      opacity: 0;
+    }
+    15% {
+      opacity: 1;
+    }
+    16% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+</style>
