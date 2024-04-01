@@ -1,5 +1,7 @@
 ---
 import SEO from "../components/SEO.astro";
+import SubBanner from "../components/SubBanner.astro";
+import Layout from "./Layout.astro";
 interface Props {
   title: string;
   description: string;
@@ -8,21 +10,7 @@ interface Props {
 const { title, description } = Astro.props;
 ---
 
-<!doctype html>
-<html lang="es">
-  <head>
-    <SEO {title} {description} />
-  </head>
-  <body>
-    <header>
-      <img
-        src="/images/banner.webp"
-        alt=""
-        width="1920px"
-        height="300px"
-        class=""
-      />
-    </header>
-    <slot />
-  </body>
-</html>
+<Layout title={title} description={description}>
+  <SubBanner />
+  <slot />
+</Layout>

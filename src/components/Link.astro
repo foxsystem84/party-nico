@@ -1,0 +1,35 @@
+---
+//import { navData } from "../config/data.json";
+---
+
+<div>
+  <ul class="flex items-center gap-[3vw]">
+    <li class="font-normal text-xl">
+      <a
+        class="hover:text-[#a4abb6] focus:text-[#447360] transition duration-300 ease-in-out"
+        href="/"
+        data-navLink
+      >
+        Inicio
+      </a>
+    </li>
+    <li class="font-normal text-xl">
+      <a
+        class="hover:text-[#5C9356] focus:text-[#447360] transition duration-300 ease-in-out"
+        href="/ubicacion"
+        data-navLink
+      >
+        Ubicación
+      </a>
+    </li>
+  </ul>
+</div>
+
+<script>
+  const navLinks = document.querySelectorAll("[data-navLink]");
+  navLinks.forEach((li) => {
+    if (li.getAttribute("href") === window.location.pathname) {
+      li.setAttribute("style", "color:#447360");
+    }
+  });
+</script>

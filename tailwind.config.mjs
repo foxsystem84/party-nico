@@ -4,11 +4,11 @@ export default {
   theme: {
     extend: {
       screens: {
-        sm: "480px",
+        sm: "576px",
         md: "768px",
-        lg: "976px",
-        xl: "1000px",
-        "2xl": "1200px",
+        lg: "992px",
+        xl: "1200px",
+        "2xl": "1400px",
       },
     },
   },

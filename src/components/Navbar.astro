@@ -1,18 +1,154 @@
 ---
-
+import Link from "./Link.astro";
+//import Sidebar from "./Sidebar.astro"
+import { Image } from "astro:assets";
+//import { navData } from  '../config/data.json'
 ---
 
-<header class="container mx-auto">
-  <div class="flex justify-between">
-    <div class="relative">
-      <img src=" /images/bb.png" alt="logo bebe" />
+<nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm bg-white/50">
+  <div class="container mx-auto">
+    <div class="flex justify-between py-2 px-2">
+      <div class="flex items-center lg:block">
+        <a aria-label="logo Nico" href="/">
+          <!-- <img
+      src="/images/logo-white.png"
+      alt="logo versel"
+      width="248"
+      height="60"
+     /> -->
+          <Image
+            src={`/images/logo-nico3.png`}
+            alt="logo nicolas"
+            width={239}
+            height={50}
+            format="svg"
+            quality={100}
+          />
+        </a>
+      </div>
+      <div class="lg:flex items-center hidden">
+        <Link />
+      </div>
+      <div class="relative z-50 flex items-center lg:hidden">
+        <button
+          id="toggle-btn"
+          aria-label="toggle-btn"
+          class="h-10 w-10 text-[#447360]"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2.5"
+            stroke="currentColor"
+            class="w-8 h-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+          </svg>
+        </button>
+      </div>
     </div>
-    <div>
-      <ul class="flex gap-4">
-        <a href="#"><li>Inicio</li></a>
-        <a href="#"><li>Sobre Mi</li></a>
-        <a href="#"><li>Dirección</li></a>
+  </div>
+</nav>
+<div id="sidebar">
+  <div class="relative mt-6 flex-1 px-4 sm:px-6">
+    {/* Your content */}
+    <div class="flex justify-between">
+      <a aria-label="logo" href="/">
+        <img
+          src="/images/logo-nico3.png"
+          alt="LOGO nico"
+          width="239px"
+          height="50px"
+        />
+      </a>
+      <button
+        id="btn-close"
+        aria-label="btn-close"
+        class="closeBtn w-10 h-10 text-[#447360]"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          class="w-8 h-8"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18 18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="mt-5">
+      <ul class="ml-5">
+        <li class="text-xl cursor-pointer mb-3">
+          <a class="block hover:text-[#5C9356] py-3" href="/" data-navLink>
+            Inicio
+          </a>
+        </li>
+        <li class="text-xl cursor-pointer mb-3">
+          <a
+            class="block hover:text-[#5C9356] py-3"
+            href="/ubicacion"
+            data-navLink
+          >
+            Ubicación
+          </a>
+        </li>
       </ul>
     </div>
   </div>
-</header>
+</div>
+<div id="overlay" class=""></div>
+
+<style>
+  #sidebar {
+    background-color: #f3efd0;
+
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    left: -100vw;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  #sidebar.active {
+    left: 0;
+  }
+  .modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 40;
+    width: 100vw;
+    height: 100vh;
+    background-color: #293651;
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+  }
+</style>
+
+<script>
+  const toggleBtn = document.getElementById("toggle-btn") as HTMLElement;
+  const btnClose = document.getElementById("btn-close") as HTMLElement;
+  const sidebar = document.getElementById("sidebar") as HTMLElement;
+  const overlay = document.getElementById("overlay") as HTMLElement;
+
+  toggleBtn.addEventListener("click", () => {
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("modal-backdrop");
+  });
+
+  btnClose.addEventListener("click", () => {
+    sidebar.classList.remove("active");
+    overlay.classList.remove("modal-backdrop");
+  });
+</script>

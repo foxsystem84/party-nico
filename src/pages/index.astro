@@ -1,32 +1,38 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
 ---
 
 <Layout
   title="Fiesta de Nico"
   description="Celebración de su primer cumpleaños de mi hijo Nicolás"
 >
-  <main data-scroll-container class="">
+  <main data-scroll-container class="absolute top-0 left-0 right-0">
     <section class="section1">
-      <!-- <header class="container mx-auto flex justify-between py-10">
-        <div>
-          <img src="/images/logo-nico2.png" />
-        </div>
-        <div class="flex items-center">
-          <ul class="flex gap-8 text-black text-2xl">
-            <li><a href="#" class="block">Inicio</a></li>
-            <li><a href="#">Biografia</a></li>
-            <li><a href="#">Ubicacion</a></li>
-          </ul>
-        </div>
-      </header> -->
       <div class="h-screen w-full relative overflow-hidden bg-[#5EBC9E]">
         <img
           data-scroll
           data-scroll-speed="-3"
           data-scroll-delay=".08"
+          src="/images/party/animals2.png"
+          class="parallax animals absolute block lg:hidden bottom-0 -translate-x-1/2 -translate-y-1/2 object-cover z-40"
+          alt=""
+        />
+        <img
+          data-scroll
+          data-scroll-speed="-3"
+          data-scroll-delay=".08"
           src="/images/party/animals.png"
-          class="parallax animals absolute hidden md:block bottom-0 right-[80px] w-[1150px] h-[780px] object-cover z-40"
+          class="parallax animals absolute hidden lg:block bottom-0 right-[80px] w-[1150px] h-[780px] object-cover z-40"
+          alt=""
+        />
+        <img
+          data-scroll
+          data-scroll-speed="-2"
+          data-scroll-delay=".03"
+          data-scroll-position="top"
+          src="/images/party/cake3.png"
+          class="parallax cake absolute block sm:hidden -bottom-[20px] md:-bottom-[100px] left-[33%] -translate-x-1/2 -translate-y-1/2 object-cover z-40"
           alt=""
         />
         <img
@@ -35,7 +41,7 @@ import Layout from "../layouts/Layout.astro";
           data-scroll-delay=".03"
           data-scroll-position="top"
           src="/images/party/cake.png"
-          class="parallax cake absolute block md:hidden -bottom-[100px] w-full h-auto object-cover z-40"
+          class="parallax cake absolute hidden sm:block lg:hidden -bottom-[20px] md:-bottom-[100px] left-[33%] -translate-x-1/2 -translate-y-1/2 object-cover z-40"
           alt=""
         />
         <img
@@ -44,20 +50,20 @@ import Layout from "../layouts/Layout.astro";
           data-scroll-delay=".03"
           data-scroll-position="top"
           src="/images/party/cake.png"
-          class="parallax cake hidden md:block absolute bottom-0 right-[32px] md:right-[484px] w-[360px] h-[480px] object-cover z-40"
+          class="parallax cake hidden lg:block absolute bottom-0 right-[32px] md:right-[484px] w-[360px] h-[480px] object-cover z-40"
           alt=""
         />
         <div
-          class="title absolute top-[35%] md:top-1/2 left-1/2 md:left-1/4 -translate-x-1/2 -translate-y-1/2 z-50 text-center space-y-6"
+          class="title absolute top-[35%] md:top-1/2 left-1/2 lg:left-1/4 -translate-x-1/2 -translate-y-1/2 z-50 text-center space-y-6"
         >
           <h1
-            class="text-5xl md:text-[110px] leading-none font-bold text-[#5c9356] uppercase"
+            class="text-5xl md:text-[70px] lg:text-[110px] leading-none font-bold text-[#5c9356] uppercase"
           >
             Fiesta de<br /><span class="text-[#447360]">Nicolás</span>
           </h1>
 
           <div class="px-4 md:px-8 py-2 bg-[#af825d] rounded-lg inline-block">
-            <h3 class="text-xl md:text-3xl font-semibold text-white">
+            <h3 class="text-xl md:text-2xl lg:text-[3xl] text-white">
               Sábado 6 Abril / 4pm
             </h3>
           </div>
@@ -129,8 +135,6 @@ import Layout from "../layouts/Layout.astro";
           alt=""
         />
         <img
-          data-scroll
-          data-scroll-sticky
           src="/images/party/leaves2-bottom.png"
           class="parallax leaves2-b absolute bottom-0 w-full h-[150px] object-cover z-50"
           alt=""
@@ -240,40 +244,6 @@ import Layout from "../layouts/Layout.astro";
         </div>
       </div>
     </section>
-    <!-- <footer
-      class="relative text-white mt-20 flex w-full flex-col place-items-center pb-20"
-    >
-      <div
-        class="absolute z-50 bg-[url('/images/party/leaves-bottom.png')] bottom-0 w-full h-[250px]"
-      >
-      </div>
-      <div
-        class="container mx-auto z-50 flex flex-col pt-6 md:flex-row md:justify-between"
-      >
-        <span
-          >{new Date().getFullYear()} IOLatam | Todos los derechos reservados</span
-        >
-        <span
-          aria-hidden="true"
-          class="mt-6 w-full border-t-2 border-[#1E2229] pt-6 md:hidden"></span>
-
-        <nav>
-          <ul
-            class="flex flex-row items-center gap-x-6"
-            aria-label="redes sociales y botón para alternar tema"
-          >
-            <li class="flex flex-row items-center">
-              <img
-                class="inline-block mr-2"
-                src="/images/ubicacion.png"
-                alt="ubicación"
-              />
-              <span class='inline-block"'>Dirección</span>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </footer> -->
   </main>
 </Layout>
 
@@ -437,51 +407,5 @@ import Layout from "../layouts/Layout.astro";
   [data-scroll-direction="horizontal"] .c-scrollbar_thumb {
     right: auto;
     bottom: 0;
-  }
-
-  h1,
-  h2,
-  h2 div {
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-  div h1,
-  div h3 {
-    font-family: "Titan One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .zenon,
-  .lola,
-  .percheron,
-  .bartolito {
-    animation: blink 3.5s infinite;
-    animation-delay: 2s;
-    opacity: 0;
-  }
-  @keyframes blink {
-    0% {
-      opacity: 0;
-    }
-    5% {
-      opacity: 1;
-    }
-    6% {
-      opacity: 0;
-    }
-    15% {
-      opacity: 1;
-    }
-    16% {
-      opacity: 0;
-    }
-    90% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 0;
-    }
   }
 </style>
